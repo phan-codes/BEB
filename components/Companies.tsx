@@ -3,7 +3,7 @@ import React from "react";
 
 const Companies = () => {
 	return (
-		<div className="flex w-full justify-around items-center py-3 px-10 overflow-hidden dark:opacity-0">
+		<div className="flex w-full justify-around items-center py-3 px-10 overflow-hidden dark:hidden">
 			<Image src="/wolfgordon.png" alt=" wolf gordon" width={100} height={50} className="mx-3" />
 			<Image src="/koroseal.jpg" alt="koroseal" width={100} height={50} className="mx-3" />
 			<Image src="/innovations-e1466986811546.png" alt="innovations" width={100} height={50} className="mx-3" />
