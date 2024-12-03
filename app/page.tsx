@@ -8,12 +8,12 @@ import Services from "@/components/Services";
 
 export default function Home() {
 	return (
-		<div className="overflow-x-hidden">
+		<section className="overflow-x-hidden">
 			<Hero />
 			<Companies />
 			<Services />
 			<GetStarted />
 			<HomeContacts />
-		</div>
+		</section>
 	);
 }
