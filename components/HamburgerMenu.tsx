@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+interface HamburgerMenuProps {
+	isMenuShown: boolean;
+	handleMenuShow?: () => void;
+}
 
-const HamburgerMenu = () => {
-	const [isMenuShown, setIsMenuShown] = useState(false);
+export interface NavLinkProp extends HamburgerMenuProps {
+	hideMenu: () => void;
+}
 
-	const handleMenuShow = () => {
-		setIsMenuShown(!isMenuShown);
-	};
-
-	// const hideMenu = () => {
-	// 	setIsMenuShown(false);
-	// };
+const HamburgerMenu = ({ isMenuShown, handleMenuShow }: HamburgerMenuProps) => {
 	return (
 		<div className="flex flex-col gap-y-1 lg:hidden cursor-pointer relative " onClick={handleMenuShow}>
 			<div
