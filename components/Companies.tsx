@@ -10,21 +10,21 @@ const Companies = () => {
 	return (
 		<div className="flex w-full justify-around items-center py-3 px-10 gap-x-6 overflow-hidden">
 			<Link href="inline-block mx-3">
-				<Image src="/wolfgordon.png" alt=" wolf gordon" width={100} height={50} />
+				<Image src="/wolfgordon.png" alt=" wolf gordon" width={150} height={70} />
 			</Link>
 			<Link href="">
-				<Image src="/koroseal.png" alt="koroseal" width={100} height={50} />
+				<Image src="/koroseal.png" alt="koroseal" width={150} height={70} />
 			</Link>
 			<Link href="">
 				<Image
 					src={`${theme === "light" ? "/innovations-e1466986811546.png" : "/innovationsdark.png"}`}
 					alt="innovations"
-					width={100}
-					height={50}
+					width={150}
+					height={70}
 				/>
 			</Link>
 			<Link href="" className="">
-				<Image src="/mayaR-300x47.png" alt="mayar" width={100} height={50} />
+				<Image src="/mayaR-300x47.png" alt="mayar" width={150} height={70} />
 			</Link>
 		</div>
 	);
