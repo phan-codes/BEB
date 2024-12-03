@@ -8,12 +8,12 @@ import Link from "next/link";
 const Companies = () => {
 	const { theme } = useContext(ThemeContext);
 	return (
-		<div className="flex w-full justify-around items-center py-3 px-10 overflow-hidden">
-			<Link href="">
-				<Image src="/wolfgordon.png" alt=" wolf gordon" width={100} height={50} className="mx-3" />
+		<div className="flex w-full justify-around items-center py-3 px-10 gap-x-6 overflow-hidden">
+			<Link href="inline-block mx-3">
+				<Image src="/wolfgordon.png" alt=" wolf gordon" width={100} height={50} />
 			</Link>
 			<Link href="">
-				<Image src="/koroseal.png" alt="koroseal" width={100} height={50} className="mx-3" />
+				<Image src="/koroseal.png" alt="koroseal" width={100} height={50} />
 			</Link>
 			<Link href="">
 				<Image
@@ -21,11 +21,10 @@ const Companies = () => {
 					alt="innovations"
 					width={100}
 					height={50}
-					className="mx-3"
 				/>
 			</Link>
-			<Link href="">
-				<Image src="/mayaR-300x47.png" alt="mayar" width={100} height={50} className="mx-3" />
+			<Link href="" className="">
+				<Image src="/mayaR-300x47.png" alt="mayar" width={100} height={50} />
 			</Link>
 		</div>
 	);

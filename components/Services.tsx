@@ -1,5 +1,5 @@
 import React from "react";
-// import ServiceCard from "./ServiceCard";
+import ServiceCard from "./ServiceCard";
 
 const Services = () => {
 	return (
@@ -11,7 +11,7 @@ const Services = () => {
 			<p className="text-sm text-gray-500">
 				We offer a variety of wallcovering and wall protection services to suit your specific needs.
 			</p>
-			{/* <ServiceCard /> */}
+			<ServiceCard />
 		</div>
 	);
 };
