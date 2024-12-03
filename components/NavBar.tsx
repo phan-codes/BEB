@@ -17,10 +17,10 @@ const NavBar = () => {
 		setIsMenuShown(false);
 	};
 	return (
-		<div className=" relative flex justify-between items-center w-full py-3 px-8 text-black dark:text-gray-400 dark:bg-black">
+		<div className=" relative flex justify-between items-center w-full py-3 px-5 text-black dark:text-gray-400 dark:bg-black">
 			<div className="flex justify-center items-center">
-				<Image src="/svgs/logo.svg" alt="logo" width={60} height={60} />
-				<span className="translate-y-2 -translate-x-3 font-bold text-[#e8bc37]">B.E.B</span>
+				<Image src="/svgs/logo.svg" alt="logo" width={80} height={80} />
+				<span className="translate-y-3 -translate-x-4 font-bold text-[#e8bc37]">B.E.B</span>
 			</div>
 			<NavLinks isMenuShown={isMenuShown} hideMenu={hideMenu} />
 

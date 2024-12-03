@@ -24,6 +24,15 @@ export default {
 				light:
 					"linear-gradient(to bottom, rgba(100,100,100,0), rgba(100,100,100,0.05),  rgba(100,100,100,0)), url('../public/light.png')",
 			},
+			animation: {
+				scroll: "scroll 20s linear infinite",
+			},
+			keyframes: {
+				scroll: {
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(-100%)" },
+				},
+			},
 		},
 	},
 	plugins: [],
