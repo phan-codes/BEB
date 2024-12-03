@@ -1,15 +1,19 @@
 // import Image from "next/image";
 
 import Companies from "@/components/Companies";
+import GetStarted from "@/components/GetStarted";
 import Hero from "@/components/Hero";
+import HomeContacts from "@/components/HomeContacts";
 import Services from "@/components/Services";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="overflow-x-hidden">
 			<Hero />
 			<Companies />
 			<Services />
+			<GetStarted />
+			<HomeContacts />
 		</div>
 	);
 }

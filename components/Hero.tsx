@@ -8,7 +8,7 @@ const Hero = () => {
 			<p className="text-sm text-gray-500">Serving the Southern California region and beyond.</p>
 			<Link
 				href="/services"
-				className="bg-[#052DB9] inline-block py-2 px-4 font0-bold text-white rounded-full shadow-lg hover:bg-[#1f368a]">
+				className="bg-[#052DB9] inline-block py-2 px-4 text-white rounded-full shadow-lg hover:bg-[#1f368a]">
 				Services
 			</Link>
 		</div>
