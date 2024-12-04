@@ -1,5 +1,3 @@
-// import Image from "next/image";
-
 import Companies from "@/components/Companies";
 import GetStarted from "@/components/GetStarted";
 import Hero from "@/components/Hero";
@@ -8,7 +6,7 @@ import Services from "@/components/Services";
 
 export default function Home() {
 	return (
-		<section className="overflow-x-hidden">
+		<section>
 			<Hero />
 			<Companies />
 			<Services />

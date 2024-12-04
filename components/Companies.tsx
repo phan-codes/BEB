@@ -8,7 +8,7 @@ import Link from "next/link";
 const Companies = () => {
 	const { theme } = useContext(ThemeContext);
 	return (
-		<div className="flex w-full justify-around items-center py-3 px-10 gap-x-6 overflow-hidden">
+		<div className="flex w-full justify-around items-center py-3 px-10 gap-x-6 border-b border-solid border-gray-200 dark:border-gray-900">
 			<Link href="inline-block mx-3">
 				<Image src="/wolfgordon.png" alt=" wolf gordon" width={150} height={70} />
 			</Link>
