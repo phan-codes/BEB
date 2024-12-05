@@ -17,7 +17,7 @@ const NavBar = () => {
 		setIsMenuShown(false);
 	};
 	return (
-		<div className=" relative flex justify-between items-center w-full py-3 px-5 text-black shadow-md dark:text-gray-400 dark:bg-black dark:shadow-gray-800">
+		<div className=" relative flex justify-between items-center w-full py-3 px-5 text-black shadow-md dark:text-gray-400 dark:bg-black dark:shadow-gray-950">
 			<div className="flex justify-center items-center">
 				<Image src="/svgs/logo.svg" alt="logo" width={80} height={80} />
 				<span className="translate-y-3 -translate-x-4 font-bold text-[#e8bc37]">B.E.B</span>

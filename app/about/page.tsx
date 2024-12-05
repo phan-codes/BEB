@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+	title: "About - B.E.B Wallcovering",
+	description: "Wall coverings, BEB, B.E.B, Brett Bender, Good Wall covering services",
+};
 
 const AboutPage = () => {
 	return (
