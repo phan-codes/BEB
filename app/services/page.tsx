@@ -22,7 +22,7 @@ const ServicesPage = () => {
 					</span>
 				</h1>
 			</div>
-			<div className="flex flex-wrap w-full py-10 px-7 gap-10 justify-center">
+			<div className="flex flex-wrap w-full py-10 px-5 gap-10 justify-center">
 				{services.map((service, index) => (
 					<div key={index} className="flex flex-col ">
 						<div className="max-w-lg">
@@ -33,9 +33,11 @@ const ServicesPage = () => {
 							</Carousel>
 						</div>
 						<h2 className="text-lg font-bold pt-5 pb-3">{service.name}</h2>
-						<div className="font-bold text-xs text-gray-700">
+						<div className="font-bold text-xs text-gray-700 ">
 							{service.variety.map((variety, index) => (
-								<p key={index}>- {variety}</p>
+								<p key={index} className="py-[2px]">
+									- {variety}
+								</p>
 							))}
 						</div>
 					</div>
