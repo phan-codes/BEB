@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const ServicesPage = () => {
 	return (
-		<section className="py-14 px-7">
+		<section className="py-14">
 			<div className="bg-[#052DB9] flex items-center justify-center text-center h-64 py-6 px-7">
 				<h1 className="font-semibold text-3xl leading-[50px] md:text-4xl md:leading-[60px] text-gray-300">
 					Want to plan your project with us?
@@ -22,7 +22,7 @@ const ServicesPage = () => {
 					</span>
 				</h1>
 			</div>
-			<div className="flex flex-wrap w-full py-10 gap-10 justify-center">
+			<div className="flex flex-wrap w-full py-10 px-7 gap-10 justify-center">
 				{services.map((service, index) => (
 					<div key={index} className="flex flex-col ">
 						<div className="max-w-lg">
