@@ -22,13 +22,13 @@ const ServicesPage = () => {
 					</span>
 				</h1>
 			</div>
-			<div className="flex flex-wrap w-full py-10 gap-y-10  justify-center md:gap-x-10">
+			<div className="flex flex-wrap w-full py-10 px-7 gap-y-10  justify-center md:gap-x-10">
 				{services.map((service, index) => (
 					<div key={index} className="flex flex-col ">
 						<div className="max-w-lg">
 							<Carousel autoSlide={true} autoSlideInterval={5000}>
 								{service.images.map((img, index) => (
-									<Image key={index} src={img} alt={service.name} width={600} height={600} className="rounded" />
+									<Image key={index} src={img} alt={service.name} width={600} height={600} />
 								))}
 							</Carousel>
 						</div>
