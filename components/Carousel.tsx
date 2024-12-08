@@ -9,8 +9,6 @@ const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselProps) => 
 
 	const previous = () => {
 		setCurrent((current) => (current === 0 ? children.length - 1 : current - 1));
-
-		console.log(children);
 	};
 
 	const next = () => {
