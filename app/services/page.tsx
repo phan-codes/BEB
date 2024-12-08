@@ -28,7 +28,7 @@ const ServicesPage = () => {
 						<div className="max-w-lg">
 							<Carousel autoSlide={true} autoSlideInterval={5000}>
 								{service.images.map((img, index) => (
-									<Image key={index} src={img} alt={service.name} width={600} height={500} className="w-full h-full" />
+									<Image key={index} src={img} alt={service.name} width={550} height={400} />
 								))}
 							</Carousel>
 						</div>
