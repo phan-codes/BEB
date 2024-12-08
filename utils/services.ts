@@ -1,4 +1,4 @@
-import { ServicesTypeProp } from "@/types";
+import { RecentServicesTypeProp, ServicesTypeProp } from "@/types";
 import vinyl1 from "@/public/vinyl1.jpg";
 import vinyl2 from "@/public/vinyl2.jpg";
 import vinyl3 from "@/public/vinyl3.jpg";
@@ -12,6 +12,15 @@ import panels from "@/public/panels.jpg";
 import panels2 from "@/public/panels2.jpg";
 import specialtyProd from "@/public/specialtyprod.jpg";
 import specialtyProd2 from "@/public/specialtyprod2.jpg";
+
+import jc from "@/public/jc.jpg";
+import hollywood from "@/public/hollywood.jpg";
+import hollywood2 from "@/public/hollywood2.jpg";
+import victoria from "@/public/victoria.jpg";
+import victoria2 from "@/public/victoria2.jpg";
+import pasea from "@/public/pasea.jpg";
+import pasea2 from "@/public/pasea2.jpg";
+import pasea3 from "@/public/pasea3.jpg";
 
 export const services: ServicesTypeProp[] = [
 	{
@@ -44,5 +53,32 @@ export const services: ServicesTypeProp[] = [
 		name: "Other Specialty Products",
 		variety: ["Crash rail", "Corner guards", "Marker boards"],
 		images: [specialtyProd, specialtyProd2],
+	},
+];
+
+export const recents: RecentServicesTypeProp[] = [
+	{
+		id: 1,
+		name: "J.C. Penney",
+		linkImage: jc,
+		images: [jc],
+	},
+	{
+		id: 2,
+		name: "Hollywood Park Casino",
+		linkImage: hollywood,
+		images: [hollywood, hollywood2],
+	},
+	{
+		id: 3,
+		name: "Victoria’s Secret",
+		linkImage: victoria,
+		images: [victoria, victoria2],
+	},
+	{
+		id: 4,
+		name: "Pasea Hotel and Spa",
+		linkImage: pasea,
+		images: [pasea, pasea2, pasea3],
 	},
 ];

@@ -16,3 +16,10 @@ export interface CarouselProps {
 	autoSlide: boolean;
 	autoSlideInterval: number;
 }
+
+export interface RecentServicesTypeProp {
+	id: number;
+	name: string;
+	linkImage: StaticImageData;
+	images: StaticImageData[];
+}

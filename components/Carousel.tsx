@@ -25,7 +25,7 @@ const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselProps) => 
 	return (
 		<div className="overflow-hidden relative">
 			<div
-				className="flex transition-transform ease-out duration-1000"
+				className="flex transition-transform ease-out duration-1000 h-[400px]"
 				style={{ transform: `translateX(-${current * 100}%)`, willChange: "transform" }}>
 				{children}
 			</div>
@@ -41,12 +41,12 @@ const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselProps) => 
 					<ChevronRight size={30} />
 				</button>
 			</div>
-			<div className="absolute bottom-4 right-0 left-0">
+			<div className="absolute bottom-6 right-0 left-0">
 				<div className="flex items-center justify-center gap-2">
 					{children.map((_, i) => (
 						<div
 							key={i}
-							className={`transition-all w-3 h-3 bg-white rounded-full ${
+							className={`transition-all w-2 h-2 bg-white rounded-full ${
 								current === i ? "p-2" : "bg-opacity-40"
 							}`}></div>
 					))}
