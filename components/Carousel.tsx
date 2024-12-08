@@ -28,7 +28,7 @@ const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselProps) => 
 		<div className="overflow-hidden relative">
 			<div
 				className="flex transition-transform ease-out duration-1000"
-				style={{ transform: `translateX(-${current * 100}%)` }}>
+				style={{ transform: `translateX(-${current * 100}%)`, willChange: "transform" }}>
 				{children}
 			</div>
 			<div className="absolute inset-0 flex justify-between  items-center p-4">
