@@ -25,7 +25,7 @@ export const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselPro
 	return (
 		<div className="overflow-hidden relative">
 			<div
-				className="flex transition-transform ease-out duration-1000 h-[400px]"
+				className="flex transition-transform ease-out duration-1000"
 				style={{ transform: `translateX(-${current * 100}%)`, willChange: "transform" }}>
 				{children}
 			</div>
