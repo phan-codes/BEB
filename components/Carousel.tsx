@@ -4,8 +4,8 @@ import { CarouselProps } from "@/types";
 import React, { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
 
-const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselProps) => {
-	const [current, setCurrent] = useState(0);
+export const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselProps) => {
+	const [current, setCurrent] = useState<number>(0);
 
 	const previous = () => {
 		setCurrent((current) => (current === 0 ? children.length - 1 : current - 1));
@@ -55,5 +55,3 @@ const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselProps) => 
 		</div>
 	);
 };
-
-export default Carousel;

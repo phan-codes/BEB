@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { services, recents } from "@/utils/services";
 import Image from "next/image";
-import Carousel from "@/components/Carousel";
+import { Carousel } from "@/components/Carousel";
 
 export const metadata: Metadata = {
 	title: "Services - B.E.B Wallcovering",
@@ -58,7 +58,7 @@ const ServicesPage = () => {
 					{recents.map(({ id, name, linkImage }) => (
 						<div key={id} className="pt-10 flex flex-col gap-y-5 px-5">
 							<Link
-								href={`/services/${name}`}
+								href={`/services/${id}`}
 								className="inline-flex max-h-60 max-w-96 justify-between md:max-h-32 md:max-w-44 group relative">
 								<Image src={linkImage} alt={name} width={500} height={200} className="rounded-md" />
 								<div className="absolute inset-0 opacity-0 bg-[#052DB9] rounded-md group-hover:opacity-50 duration-500 flex justify-center items-center">

@@ -61,7 +61,7 @@ export const recents: RecentServicesTypeProp[] = [
 		id: 1,
 		name: "J.C. Penney",
 		linkImage: jc,
-		images: [jc],
+		images: [jc, jc],
 	},
 	{
 		id: 2,
