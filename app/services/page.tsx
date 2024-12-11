@@ -32,9 +32,9 @@ const ServicesPage = () => {
 										key={index}
 										src={img}
 										alt={service.name}
-										width={0}
+										width={600}
 										height={0}
-										className="rounded-md w-full h-auto"
+										className="rounded-md h-auto"
 									/>
 								))}
 							</Carousel>
