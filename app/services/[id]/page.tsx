@@ -14,7 +14,17 @@ const RecentDisplayPage = async ({ params }: { params: Promise<{ id: number }> }
 			<div className="max-w-lg px-7">
 				<Carousel autoSlide={false} autoSlideInterval={5000}>
 					{recent?.images.map(({ src }, index) => (
-						<Image key={index} src={src} alt={recent?.name} width={900} height={600} className="rounded-md" />
+						// <div  className="relative w-[600px] h-[400px]">
+						<Image
+							key={index}
+							src={src}
+							alt={recent?.name}
+							width={1000}
+							height={600}
+							className="rounded-md"
+							sizes="100vw"
+						/>
+						// </div>
 					))}
 				</Carousel>
 			</div>
