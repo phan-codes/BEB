@@ -1,21 +1,19 @@
-"use client";
-
 import { Metadata } from "next";
 import Link from "next/link";
 import axios from "axios";
 import { useEffect } from "react";
 
-// export const metadata: Metadata = {
-// 	title: "Contact - B.E.B Wallcovering",
-// 	description: "Wall coverings, BEB, B.E.B, Brett Bender, Good Wall covering services",
-// };
+export const metadata: Metadata = {
+	title: "Contact - B.E.B Wallcovering",
+	description: "Wall coverings, BEB, B.E.B, Brett Bender, Good Wall covering services",
+};
 
-const ContactPage = () => {
-	const handleClick = async (e: Event) => {
-		e.preventDefault();
+// const ContactPage = () => {
+// 	const handleClick = async (e: Event) => {
+// 		e.preventDefault();
 
-		const data = await axios.post("/api/email");
-	};
+// 		const data = await axios.post("/api/email");
+// 	};
 
 	return (
 		<section className="flex flex-col justify-center items-center w-full text-center">
@@ -87,7 +85,7 @@ const ContactPage = () => {
 						<button
 							type="submit"
 							className="inline-bloc shadow-lg px-4 py-2 w-full outline-none border-none text-gray-300 rounded-md bg-[#052DB9] hover:bg-[#1f368a]"
-							onClick={() => handleClick}>
+							>
 							Submit
 						</button>
 					</form>
