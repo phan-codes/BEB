@@ -9,7 +9,7 @@ const RecentDisplayPage = async ({ params }: { params: Promise<{ id: number }> }
 	const recent = recents.find((recent) => recent?.id == id) as RecentServicesTypeProp;
 
 	return (
-		<div className="flex flex-col justify-center items-center">
+		<div className="flex flex-col justify-center items-center py-16">
 			<p className="py-5 text-3xl font-bold uppercase text-gray-400">{recent?.name}</p>
 			<div className="max-w-lg px-7">
 				<Carousel autoSlide={false} autoSlideInterval={5000}>

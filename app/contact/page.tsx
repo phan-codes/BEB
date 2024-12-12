@@ -1,14 +1,24 @@
+"use client";
+
 import { Metadata } from "next";
 import Link from "next/link";
+import axios from "axios";
+import { useEffect } from "react";
 
-export const metadata: Metadata = {
-	title: "Contact - B.E.B Wallcovering",
-	description: "Wall coverings, BEB, B.E.B, Brett Bender, Good Wall covering services",
-};
+// export const metadata: Metadata = {
+// 	title: "Contact - B.E.B Wallcovering",
+// 	description: "Wall coverings, BEB, B.E.B, Brett Bender, Good Wall covering services",
+// };
 
 const ContactPage = () => {
+	const handleClick = async (e: Event) => {
+		e.preventDefault();
+
+		const data = await axios.post("/api/email");
+	};
+
 	return (
-		<section className="flex flex-col justify-center items-center w-full text-center overflow-hidden">
+		<section className="flex flex-col justify-center items-center w-full text-center">
 			<div className="flex flex-col justify-center items-center lg:flex-row w-full lg:items-start">
 				<div className=" py-10 px-7 w-full lg:basis-[50%] lg:px-10">
 					<h1 className=" w-44 font-bold text-lg dark:text-gray-300">
@@ -22,13 +32,13 @@ const ContactPage = () => {
 								name="name"
 								required
 								placeholder="Your Name"
-								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md"
+								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg dark:focus:shadow-slate-900"
 							/>
 							<label
 								htmlFor="name"
 								className="absolute -top-6 left-0
-								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-1 dark:peer-placeholder-shown:text-gray-700   peer-focus:-top-8 dark:peer-focus:text-gray-400 duration-500">
-								Your Name*
+								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-1 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-8 dark:peer-focus:text-gray-400 duration-500">
+								Your Name *
 							</label>
 						</div>
 						<div className="relative py-2">
@@ -37,27 +47,26 @@ const ContactPage = () => {
 								name="email"
 								required
 								placeholder="Your Email*"
-								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md"
+								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg dark:focus:shadow-slate-900"
 							/>
 							<label
 								htmlFor="email"
 								className="absolute -top-6 left-0
-								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700   peer-focus:-top-6 dark:peer-focus:text-gray-400 duration-500">
-								Your Email*
+								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-6 dark:peer-focus:text-gray-400 duration-500">
+								Your Email *
 							</label>
 						</div>
 						<div className="relative py-2">
 							<input
 								type="text"
 								name="subject"
-								required
 								placeholder="Subject"
-								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md"
+								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg dark:focus:shadow-slate-900"
 							/>
 							<label
 								htmlFor="subject"
 								className="absolute -top-6 left-0
-								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700   peer-focus:-top-6 dark:peer-focus:text-gray-400 duration-500">
+								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-6 dark:peer-focus:text-gray-400 duration-500">
 								Subject
 							</label>
 						</div>
@@ -66,20 +75,21 @@ const ContactPage = () => {
 								name="message"
 								required
 								placeholder="Message"
-								className="text-black outline-none p-3 mb-6 caret-black dark:caret-gray-400 peer w-full border border-gray-200 bg-gray-50 dark:bg-transparent min-h-44 dark:border dark:border-gray-800 placeholder-transparent rounded-md"
+								className="text-black outline-none p-3 mb-6 caret-black dark:caret-gray-400 peer w-full border border-gray-200 bg-gray-50 dark:bg-transparent min-h-44 dark:border dark:border-gray-800 placeholder-transparent rounded-md  focus:shadow-lg dark:focus:shadow-slate-900"
 							/>
 							<label
 								htmlFor="message"
 								className="absolute -top-6 left-0
 								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700   peer-focus:-top-6 dark:peer-focus:text-gray-400 duration-500">
-								Message
+								Message *
 							</label>
 						</div>
-						<input
+						<button
 							type="submit"
 							className="inline-bloc shadow-lg px-4 py-2 w-full outline-none border-none text-gray-300 rounded-md bg-[#052DB9] hover:bg-[#1f368a]"
-							value="Submit"
-						/>
+							onClick={() => handleClick}>
+							Submit
+						</button>
 					</form>
 				</div>
 

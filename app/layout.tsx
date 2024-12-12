@@ -23,7 +23,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<ThemeProvider>
-				<body className={`${poppins.className} text-black dark:text-white dark:bg-black bg-white flex flex-col`}>
+				<body
+					className={`${poppins.className} text-black dark:text-white dark:bg-black bg-white flex flex-col h-screen`}>
 					<NavBar />
 					{children}
 					<Footer />
