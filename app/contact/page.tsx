@@ -1,3 +1,4 @@
+import Reveal from "@/components/Reveal";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -22,7 +23,7 @@ const ContactPage = () => {
 								name="name"
 								required
 								placeholder="Your Name"
-								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg dark:focus:shadow-slate-900"
+								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg focus:border-solid focus:border-gray-400 dark:focus:border-gray-500 dark:focus:shadow-slate-900"
 							/>
 							<label
 								htmlFor="name"
@@ -37,7 +38,8 @@ const ContactPage = () => {
 								name="email"
 								required
 								placeholder="Your Email*"
-								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg dark:focus:shadow-slate-900"
+								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg 
+								focus:border-gray-400 dark:focus:border-gray-500 dark:focus:shadow-slate-900"
 							/>
 							<label
 								htmlFor="email"
@@ -51,7 +53,8 @@ const ContactPage = () => {
 								type="text"
 								name="subject"
 								placeholder="Subject"
-								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg dark:focus:shadow-slate-900"
+								className="p-2 mb-6 peer w-full dark:bg-gray-100 placeholder-transparent  text-black outline-none caret-black dark:caret-gray-400 peer border border-gray-200 bg-gray-50 dark:bg-transparent dark:border dark:border-gray-800 rounded-md focus:shadow-lg 
+								focus:border-gray-400 dark:focus:border-gray-500 dark:focus:shadow-slate-900"
 							/>
 							<label
 								htmlFor="subject"
@@ -65,7 +68,8 @@ const ContactPage = () => {
 								name="message"
 								required
 								placeholder="Message"
-								className="text-black outline-none p-3 mb-6 caret-black dark:caret-gray-400 peer w-full border border-gray-200 bg-gray-50 dark:bg-transparent min-h-44 dark:border dark:border-gray-800 placeholder-transparent rounded-md  focus:shadow-lg dark:focus:shadow-slate-900"
+								className="text-black outline-none p-3 mb-6 caret-black dark:caret-gray-400 peer w-full border border-gray-200 bg-gray-50 dark:bg-transparent min-h-44 dark:border dark:border-gray-800 placeholder-transparent rounded-md  focus:shadow-lg 
+								focus:border-gray-400 dark:focus:border-gray-500 dark:focus:shadow-slate-900"
 							/>
 							<label
 								htmlFor="message"
@@ -81,35 +85,36 @@ const ContactPage = () => {
 						</button>
 					</form>
 				</div>
+				<Reveal>
+					<div className="basis-[50%] flex flex-col justify-center items-center py-10 gap-y-2 lg:self-center">
+						<h2 className="font-bold">
+							Our Office
+							<hr className="h-1 border-b-solid border-[2px] border-[#e8bc37] outline-none w-52 my-3 rounded-full " />
+						</h2>
 
-				<div className="basis-[50%] flex flex-col justify-center items-center py-10 gap-y-2 lg:self-center">
-					<h2 className="font-bold">
-						Our Office
-						<hr className="h-1 border-b-solid border-[2px] border-[#e8bc37] outline-none w-52 my-3 rounded-full " />
-					</h2>
-
-					<div>
-						<div className="text-sm text-gray-600 py-5 rounded-md px-12 leading-6 w-full shadow-lg lg:px-24 dark:shadow-gray-900 dark:shadow-md">
-							12223 Highland Ave <br /> #106-538 <br /> Rancho Cucamonga, CA 91739 <br />
-							<div className="mt-5 py-10 ">
-								<span>
-									Phone:
-									<Link href="tel:+19094634222" className="text-[#e8bc37] hover:underline">
-										909 463-4222
-									</Link>
-								</span>
-								<br />
-								<span>Fax: 909 463-7447</span> <br />
-								<span>
-									Email:
-									<Link href="mailto:info@bebwallcovering.com" className="text-[#e8bc37] hover:underline">
-										info@bebwallcovering.com
-									</Link>
-								</span>
+						<div>
+							<div className="text-sm text-gray-600 py-5 rounded-md px-12 leading-6 w-full shadow-lg lg:px-24 dark:shadow-gray-900 dark:shadow-md">
+								12223 Highland Ave <br /> #106-538 <br /> Rancho Cucamonga, CA 91739 <br />
+								<div className="mt-5 py-10 ">
+									<span>
+										Phone:
+										<Link href="tel:+19094634222" className="text-[#e8bc37] hover:underline">
+											909 463-4222
+										</Link>
+									</span>
+									<br />
+									<span>Fax: 909 463-7447</span> <br />
+									<span>
+										Email:
+										<Link href="mailto:info@bebwallcovering.com" className="text-[#e8bc37] hover:underline">
+											info@bebwallcovering.com
+										</Link>
+									</span>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</Reveal>
 			</div>
 		</section>
 	);
