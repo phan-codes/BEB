@@ -8,13 +8,12 @@ export const metadata: Metadata = {
 	description: "Wall coverings, BEB, B.E.B, Brett Bender, Good Wall covering services",
 };
 
-// const ContactPage = () => {
-// 	const handleClick = async (e: Event) => {
-// 		e.preventDefault();
+const ContactPage = () => {
+	// const handleClick = async (e: Event) => {
+	// 	e.preventDefault();
 
-// 		const data = await axios.post("/api/email");
-// 	};
-
+	// 	const data = await axios.post("/api/email");
+	// };
 	return (
 		<section className="flex flex-col justify-center items-center w-full text-center">
 			<div className="flex flex-col justify-center items-center lg:flex-row w-full lg:items-start">
@@ -84,8 +83,7 @@ export const metadata: Metadata = {
 						</div>
 						<button
 							type="submit"
-							className="inline-bloc shadow-lg px-4 py-2 w-full outline-none border-none text-gray-300 rounded-md bg-[#052DB9] hover:bg-[#1f368a]"
-							>
+							className="inline-bloc shadow-lg px-4 py-2 w-full outline-none border-none text-gray-300 rounded-md bg-[#052DB9] hover:bg-[#1f368a]">
 							Submit
 						</button>
 					</form>
