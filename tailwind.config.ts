@@ -26,14 +26,28 @@ export default {
 			},
 			animation: {
 				scroll: "scroll 20s linear infinite",
+				dangle: "dangle 1.5s linear infinite",
 			},
 			keyframes: {
 				scroll: {
 					"0%": { transform: "translateX(0)" },
 					"100%": { transform: "translateX(-100%)" },
 				},
+				dangle: {
+					"0%": { transform: "translateY(0px)" },
+					"55%": { transform: "translateY(5px)" },
+					"100%": { transform: "translateY(0px)" },
+				},
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		function ({ addUtilities }) {
+			addUtilities({
+				".aria-hidden": {
+					"aria-hidden": "true",
+				},
+			});
+		},
+	],
 } satisfies Config;

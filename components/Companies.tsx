@@ -4,21 +4,20 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { ThemeContext } from "@/providers/ThemeProvider";
 import Link from "next/link";
-import Reveal from "./Reveal";
 
 const Companies = () => {
 	const { theme } = useContext(ThemeContext);
 	return (
-		<Reveal>
-			<div className="flex w-full justify-around items-center py-3 px-10 gap-x-6 border-b border-solid border-gray-200 dark:border-gray-900">
-				<Link href="inline-block mx-3">
+		<div className="flex overflow-hidden group">
+			<div className="flex min-w-full justify-around items-center py-3 gap-x-6 border-b border-solid border-gray-200 dark:border-gray-900 animate-scroll group-hover:paused">
+				<Link href="https://www.wolfgordon.com/" className="inline-block max-w-none" target="_blank">
 					<Image src="/wolfgordon.png" alt=" wolf gordon" width={150} height={70} />
 				</Link>
 
-				<Link href="">
+				<Link href="https://koroseal.com/" className="inline-block max-w-none" target="_blank">
 					<Image src="/koroseal.png" alt="koroseal" width={150} height={70} />
 				</Link>
-				<Link href="">
+				<Link href="https://www.innovationsusa.com/" className="inline-block max-w-none" target="_blank">
 					<Image
 						src={`${theme === "light" ? "/innovations-e1466986811546.png" : "/innovationsdark.png"}`}
 						alt="innovations"
@@ -26,11 +25,34 @@ const Companies = () => {
 						height={70}
 					/>
 				</Link>
-				<Link href="" className="">
+				<Link href="https://www.mayaromanoff.com/" className="inline-block mx-3 max-w-none" target="_blank">
 					<Image src="/mayaR-300x47.png" alt="mayar" width={150} height={70} />
 				</Link>
 			</div>
-		</Reveal>
+
+			{/* Duplicate */}
+
+			<div className="flex min-w-full justify-around items-center py-3 gap-x-6 border-b border-solid border-gray-200 dark:border-gray-900 animate-scroll aria-hidden group-hover:paused">
+				<Link href="https://www.wolfgordon.com/" className="inline-block max-w-none" target="_blank">
+					<Image src="/wolfgordon.png" alt=" wolf gordon" width={150} height={70} />
+				</Link>
+
+				<Link href="https://koroseal.com/" className="inline-block max-w-none" target="_blank">
+					<Image src="/koroseal.png" alt="koroseal" width={150} height={70} />
+				</Link>
+				<Link href="https://www.innovationsusa.com/" className="inline-block max-w-none" target="_blank">
+					<Image
+						src={`${theme === "light" ? "/innovations-e1466986811546.png" : "/innovationsdark.png"}`}
+						alt="innovations"
+						width={150}
+						height={70}
+					/>
+				</Link>
+				<Link href="https://www.mayaromanoff.com/" className="inline-block mx-3 max-w-none" target="_blank">
+					<Image src="/mayaR-300x47.png" alt="mayar" width={150} height={70} />
+				</Link>
+			</div>
+		</div>
 	);
 };
 

@@ -17,7 +17,7 @@ const Hero = () => {
 			<Reveal>
 				<Link
 					href="/services"
-					className="bg-[#052DB9] inline-block py-2 px-4 text-gray-200 rounded-full shadow-lg hover:bg-[#1f368a]">
+					className="bg-[#052DB9] inline-block py-2 px-4 text-gray-200 rounded-full shadow-lg hover:bg-[#1f368a] animate-dangle">
 					Services
 				</Link>
 			</Reveal>
