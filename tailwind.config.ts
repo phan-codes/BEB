@@ -41,13 +41,5 @@ export default {
 			},
 		},
 	},
-	plugins: [
-		function ({ addUtilities }) {
-			addUtilities({
-				".aria-hidden": {
-					"aria-hidden": "true",
-				},
-			});
-		},
-	],
+	plugins: [],
 } satisfies Config;
