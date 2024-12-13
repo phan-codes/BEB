@@ -10,7 +10,7 @@ const GetStarted = () => {
 			</Reveal>
 			<Reveal>
 				<Link
-					href=""
+					href="/services"
 					className="bg-[#e8bc37] inline-block py-2 px-4 font-bold text-gray-600 rounded-full  shadow-lg hover:bg-[#b3912b] animate-dangle">
 					GET STARTED
 				</Link>
