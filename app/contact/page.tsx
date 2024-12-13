@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import axios from "axios";
-import { useEffect } from "react";
 
 export const metadata: Metadata = {
 	title: "Contact - B.E.B Wallcovering",
@@ -9,11 +7,6 @@ export const metadata: Metadata = {
 };
 
 const ContactPage = () => {
-	// const handleClick = async (e: Event) => {
-	// 	e.preventDefault();
-
-	// 	const data = await axios.post("/api/email");
-	// };
 	return (
 		<section className="flex flex-col justify-center items-center w-full text-center">
 			<div className="flex flex-col justify-center items-center lg:flex-row w-full lg:items-start">
