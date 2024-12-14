@@ -33,12 +33,12 @@ export const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselPro
 				<button
 					onClick={previous}
 					className="p-1 rounded-full shadow bg-gray-200  dark:bg-gray-950 text-[#e8bc37] hover:bg-gray-300 dark:hover:bg-gray-900">
-					<ChevronLeft size={30} />
+					<ChevronLeft size={20} />
 				</button>
 				<button
 					onClick={next}
 					className="p-1 rounded-full shadow bg-gray-200  dark:bg-gray-950 text-[#e8bc37] hover:bg-gray-300 dark:hover:bg-gray-900">
-					<ChevronRight size={30} />
+					<ChevronRight size={20} />
 				</button>
 			</div>
 			<div className="absolute bottom-6 right-0 left-0">
@@ -46,8 +46,8 @@ export const Carousel = ({ children, autoSlide, autoSlideInterval }: CarouselPro
 					{children.map((_, i) => (
 						<div
 							key={i}
-							className={`transition-all w-2 h-2 bg-white rounded-full ${
-								current === i ? "p-2" : "bg-opacity-40"
+							className={`transition-all w-1 h-1 bg-white rounded-full ${
+								current === i ? "p-1" : "bg-opacity-40"
 							}`}></div>
 					))}
 				</div>
