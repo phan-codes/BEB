@@ -89,13 +89,14 @@ const ContactPage = () => {
 						</button>
 					</form>
 				</div>
-				<Reveal>
-					<div className="basis-[50%] flex flex-col justify-center items-center py-10 gap-y-2 lg:self-center">
+				<div className="basis-[50%] flex flex-col justify-center items-center py-10 gap-y-2 lg:self-center">
+					<Reveal>
 						<h2 className="font-bold">
 							Our Office
 							<hr className="h-1 border-b-solid border-[2px] border-[#e8bc37] outline-none w-52 my-3 rounded-full " />
 						</h2>
-
+					</Reveal>
+					<Reveal>
 						<div>
 							<div className="text-sm text-gray-600 py-5 rounded-md px-12 leading-6 w-full shadow-lg lg:px-24 dark:shadow-gray-900 dark:shadow-md">
 								12223 Highland Ave <br /> #106-538 <br /> Rancho Cucamonga, CA 91739 <br />
@@ -117,8 +118,8 @@ const ContactPage = () => {
 								</div>
 							</div>
 						</div>
-					</div>
-				</Reveal>
+					</Reveal>
+				</div>
 			</div>
 		</section>
 	);

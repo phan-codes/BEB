@@ -20,9 +20,11 @@ const AboutPage = () => {
 				</div>
 			</Reveal>
 			<div className="flex flex-col justify-center items-center lg:flex-row lg:items-start">
-				<Reveal>
-					<div className="basis-[50%] py-10">
+				<div className="basis-[50%] py-10">
+					<Reveal>
 						<h1 className="font-bold py-3 dark:text-gray-300">Our Team</h1>
+					</Reveal>
+					<Reveal>
 						<article className="text-sm text-gray-600 px-7 leading-8 lg:px-24">
 							Our wallcovering business can look back on many years of experience and many successfully completed
 							projects. Satisfied customers are our motivation to perform our work with reliability, punctuality and
@@ -36,17 +38,20 @@ const AboutPage = () => {
 							</Link>{" "}
 							We look forward to hearing from you!
 						</article>
-					</div>
-				</Reveal>
+					</Reveal>
+				</div>
 
-				<Reveal>
-					<div className="basis-[50%] flex flex-col justify-center items-center py-10 gap-y-2">
+				<div className="basis-[50%] flex flex-col justify-center items-center py-10 gap-y-2">
+					<Reveal>
 						<div className=" rounded-full border-[#052DB9] border-[3px] border-solid bg-[#052DB9] shadow-lg">
 							<Image src="/BrettBender.jpg" alt="Brett" width={100} height={100} className="rounded-full" />
 						</div>
+					</Reveal>
+					<Reveal>
 						<h2 className="font-bold dark:text-gray-300">Brett Bender</h2>
 						<h3 className="text-sm dark:text-gray-400">President</h3>
-
+					</Reveal>
+					<Reveal>
 						<div>
 							<p className="text-sm text-gray-600 px-7 leading-8 lg:px-24">
 								Brett took over the reins of BEB Wallcovering from his father in 1990. Since that time Brett as overseen
@@ -54,8 +59,8 @@ const AboutPage = () => {
 								continues to expand its returning customer base.
 							</p>
 						</div>
-					</div>
-				</Reveal>
+					</Reveal>
+				</div>
 			</div>
 		</section>
 	);
