@@ -28,7 +28,8 @@ const ContactPage = () => {
 							<label
 								htmlFor="name"
 								className="absolute -top-6 left-0
-								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-1 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-8 dark:peer-focus:text-gray-400 duration-500">
+								text-gray-400 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-1 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-8
+								peer-focus:text-gray-800 dark:peer-focus:text-gray-400 duration-500">
 								Your Name *
 							</label>
 						</div>
@@ -44,7 +45,8 @@ const ContactPage = () => {
 							<label
 								htmlFor="email"
 								className="absolute -top-6 left-0
-								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-6 dark:peer-focus:text-gray-400 duration-500">
+								text-gray-400 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-6
+								peer-focus:text-gray-800 dark:peer-focus:text-gray-400 duration-500">
 								Your Email *
 							</label>
 						</div>
@@ -59,7 +61,8 @@ const ContactPage = () => {
 							<label
 								htmlFor="subject"
 								className="absolute -top-6 left-0
-								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-6 dark:peer-focus:text-gray-400 duration-500">
+								text-gray-400 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700 peer-focus:-top-6
+								peer-focus:text-gray-800  dark:peer-focus:text-gray-400 duration-500">
 								Subject
 							</label>
 						</div>
@@ -74,7 +77,8 @@ const ContactPage = () => {
 							<label
 								htmlFor="message"
 								className="absolute -top-6 left-0
-								text-gray-900 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700   peer-focus:-top-6 dark:peer-focus:text-gray-400 duration-500">
+								text-gray-400 dark:text-gray-900 text-sm p-2 pointer-events-none peer-placeholder-shown:top-2 dark:peer-placeholder-shown:text-gray-700   peer-focus:-top-6
+								peer-focus:text-gray-800  dark:peer-focus:text-gray-400 duration-500">
 								Message *
 							</label>
 						</div>

@@ -29,11 +29,11 @@ const ServicesPage = () => {
 			<Reveal>
 				<div className="flex flex-wrap w-full py-10 px-7 gap-y-10  justify-center md:gap-x-10">
 					{services.map((service, index) => (
-						<div key={index} className="flex flex-col ">
-							<div className="max-w-lg">
+						<div key={index} className="flex flex-col min-w-full">
+							<div className="max-w-lg px-7">
 								<Carousel autoSlide={true} autoSlideInterval={5000}>
 									{service.images.map((img, index) => (
-										<Image key={index} src={img} alt={service.name} width={600} height={700} className="rounded-md" />
+										<Image key={index} src={img} alt={service.name} width={900} height={600} className="rounded-md" />
 									))}
 								</Carousel>
 							</div>
