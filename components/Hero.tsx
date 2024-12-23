@@ -4,9 +4,9 @@ import Reveal from "./Reveal";
 
 const Hero = () => {
 	return (
-		<div className="bg-light flex flex-col gap-y-5 justify-center items-center text-center py-10 px-6 dark:bg-dark">
+		<div className="bg-light flex flex-col gap-y-5 justify-center items-center text-center py-10 px-6 h-96 dark:bg-dark">
 			<Reveal>
-				<h1 className="text-5xl text-black leading-normal dark:text-gray-300 font-bold max-w-96">
+				<h1 className="text-5xl text-black leading-normal dark:text-gray-300 font-bold max-w-96 mx-auto">
 					Quality &#10003; <br /> <span className="text-[#052DB9]">Experience &#10003;</span> <br />{" "}
 					<span className="text-[#e8bc37]">Dedication &#10003;</span>
 				</h1>
