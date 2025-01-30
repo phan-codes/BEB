@@ -99,16 +99,16 @@ const ContactPage = () => {
 					<Reveal>
 						<div>
 							<div className="text-sm text-gray-600 py-5 rounded-md px-12 leading-6 w-full shadow-lg lg:px-24 dark:shadow-gray-900 dark:shadow-md">
-								12223 Highland Ave <br /> #106-538 <br /> Rancho Cucamonga, CA 91739 <br />
+								10722 Arrow Route <br /> Ste 806 <br /> Rancho Cucamonga, CA 91730 <br />
 								<div className="mt-5 py-10 ">
 									<span>
 										Phone:
-										<Link href="tel:+19094634222" className="text-[#e8bc37] hover:underline">
-											909 463-4222
+										<Link href="tel:+19094663733" className="text-[#e8bc37] hover:underline">
+											{""} 909 466-3733
 										</Link>
 									</span>
 									<br />
-									<span>Fax: 909 463-7447</span> <br />
+									<span>Fax: 909 466-3733</span> <br />
 									<span>
 										Email:
 										<Link href="mailto:info@bebwallcovering.com" className="text-[#e8bc37] hover:underline">

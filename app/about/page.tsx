@@ -33,8 +33,8 @@ const AboutPage = () => {
 							projects from Universities and hospital buildings to major hotels as well as historic restorations. We
 							install all types of wallcovering and wall protection and we are fully insured and bonded. Would you like
 							to learn more about us? Simply contact us at{" "}
-							<Link href="tel:+19094634222" className="text-[#e8bc37] hover:underline">
-								909 463-4222
+							<Link href="tel:+19094663733" className="text-[#e8bc37] hover:underline">
+								(909) 466-3733
 							</Link>{" "}
 							We look forward to hearing from you!
 						</article>
@@ -54,9 +54,9 @@ const AboutPage = () => {
 					<Reveal>
 						<div>
 							<p className="text-sm text-gray-600 px-7 leading-8 lg:px-24">
-								Brett took over the reins of BEB Wallcovering from his father in 1990. Since that time Brett as overseen
-								the growth of the business year over year. This is largely due to the fact that BEB Wallcovering
-								continues to expand its returning customer base.
+								Brett took over the reins of Brett Bender Wallcovering from his father in 1990. Since that time Brett as
+								overseen the growth of the business year over year. This is largely due to the fact that Brett Bender
+								Wallcovering continues to expand its returning customer base.
 							</p>
 						</div>
 					</Reveal>

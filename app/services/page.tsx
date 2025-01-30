@@ -27,9 +27,9 @@ const ServicesPage = () => {
 			</Reveal>
 
 			<Reveal>
-				<div className="flex flex-wrap w-auto py-10 px-7 gap-y-10  justify-center md:gap-x-10">
+				<div className="flex flex-wrap w-auto py-10 px-7 gap-y-10 justify-center md:gap-x-10">
 					{services.map((service, index) => (
-						<div key={index} className="flex flex-col justify">
+						<div key={index} className="flex flex-col">
 							<div className="max-w-lg px-7 self-center">
 								<Carousel autoSlide={true} autoSlideInterval={5000}>
 									{service.images.map((img, index) => (
